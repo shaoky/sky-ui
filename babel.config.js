@@ -1,12 +1,14 @@
 module.exports = {
-  presets: ['@vue/cli-plugin-babel/preset', '@babel/typescript'],
+  presets: ['@vue/cli-plugin-babel/preset'],
+  // presets: ['@vue/cli-plugin-babel/preset', '@babel/typescript'],
   plugins: ['lodash'],
-  overrides: [
-    {
-      test: /\.vue$/,
-      plugins: ['@babel/transform-typescript']
-    }
-  ],
+  // 这个会影响test:unit
+  // overrides: [
+  //   {
+  //     test: /\.vue$/,
+  //     plugins: ['@babel/transform-typescript']
+  //   }
+  // ],
   env: {
     utils: {
       ignore: ['**/*.test.ts', '**/*.spec.ts'],
