@@ -57,3 +57,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 7. test: 增加测试
 8. chore: 构建过程或辅助工具的变动
 9. release: 发布
+10. deletl: 删除文件
+
+### 问题
+
+1. yarn storybook
+
+TypeError: Cannot read property 'parseComponent' of undefined
+
+解决：babel.config.js，删除presets->"@babel/typescript"，删除yarn.lock，node_modules，重新yarn
