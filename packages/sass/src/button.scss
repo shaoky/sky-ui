@@ -1,3 +1,6 @@
+@import "./common/var.scss";
+
+
 .sky-button {
     display: inline-block;
     padding: 10px 20px;
@@ -6,6 +9,16 @@
     border-radius: 4px;
     font-size: 14px;
     cursor: pointer;
+    background: #fff;
+    &--default {
+      &:hover {
+        background: mix(#fff, $base-color, 90%);
+      }
+    }
+    &:hover {
+      opacity: .8;
+    }
+
     // 尺寸
     &--large {
       padding: 12px 20px;
@@ -47,5 +60,13 @@
     &.is-disabled {
       cursor: not-allowed;
       opacity: 0.5;
+      &.sky-button--default:hover {
+        background: #fff;
+      }
+    }
+    &.is-loading {
+      span {
+        margin-left: 5px;
+      }
     }
   }

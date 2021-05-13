@@ -1,0 +1,20 @@
+@import "//at.alicdn.com/t/font_2541644_d8vwlrtbzhf.css";
+
+[class*=" sky-icon-"], [class^=sky-icon-] {
+	font-family: 'sky-icons';
+	display: inline-block;
+	font-style: normal;
+}
+
+.sky-icon-loading {
+  animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
