@@ -36,7 +36,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 1. build -> 项目初始化
 1. build:lib-full -> 生成index.full.js
 2. build:esm-bundle -> 生成每个Index.d.ts
-3. build:type -> 文件夹加el-
+3. build:type -> 文件夹加sky-
 4. build:utils -> 编译package/utils
 5. build:theme -> 编译css
 
