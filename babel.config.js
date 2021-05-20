@@ -1,6 +1,6 @@
 module.exports = {
-  presets: ['@vue/cli-plugin-babel/preset'],
-  // presets: ['@vue/cli-plugin-babel/preset', '@babel/typescript'],
+  // presets: ['@vue/cli-plugin-babel/preset'],
+  presets: ['@vue/cli-plugin-babel/preset', '@babel/typescript'],
   plugins: ['lodash'],
   // 这个会影响test:unit
   // overrides: [
