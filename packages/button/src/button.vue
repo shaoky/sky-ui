@@ -17,10 +17,10 @@
   </button>
 </template>
 <script lang="ts">
-import dayjs from 'dayjs'
+// import dayjs from 'dayjs'
 import type { PropType } from 'vue'
 import { defineComponent } from 'vue'
-// import { isValidComponentSize } from '@sky/utils/validators'
+import { isValidComponentSize } from '@sky/utils/validators'
 // import cloneDeep from 'lodash'
 
 
@@ -35,8 +35,8 @@ export default defineComponent({
     },
     size: {
       type: String as PropType<ComponentSize>,
-      default: 'medium'
-      // validator: isValidComponentSize
+      default: 'medium',
+      validator: isValidComponentSize
     },
     disabled: {
       type: Boolean,
