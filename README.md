@@ -1,8 +1,16 @@
 # sky-ui
 
-## 启动
+## 打包
 ```
-npm run dev
+yarn build
+```
+## 运行storybook
+```
+yarn storybook
+```
+## 测试
+```
+yarn test:unit
 ```
 
 ## 目录
@@ -13,23 +21,15 @@ npm run dev
 ├── build                           // 组件打包后的目录
 │   ├── rollup.config.js            // 单个组件打包（暂时不使用，采用统一打包）
 │   ├── rollup.config.bundle.js     // 组件打包
+│   ├── bincomp.js                  // 编译每个组件
+│   ├── build.component.js          // rollup编译组件
+│   ├── gen-type.js                 // 文件夹重命名
 ├── README.md           
 ├── package.json       // 项目配置文件
 ├── src                // 组件展示，后续改为storybook
-│   ├── api            // api接口
-│   ├── assets         // css js 和图片资源
-│   ├── components     // 各种组件
-│   ├── config         // 配置
-│   ├── router         // 配置路由
-│   ├── store          // vuex状态管理
-│   ├── views          // 各种页面
-|   ├── mixins         // 混合通用方法
-|   ├── utils          // 工具库
+│   ├── stories        // storybook
 │   └── main.js        // Webpack 预编译入口
 </pre>
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## 命令
 
@@ -42,7 +42,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### TODO
 1. vuePress 还未支持vue3
-2. storybook 还未支持vue3
+2. storybook 还未支持vue3✅
 
 ### 提交规则
 
@@ -57,7 +57,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 7. test: 增加测试
 8. chore: 构建过程或辅助工具的变动
 9. release: 发布
-10. deletl: 删除文件
+10. delete: 删除文件
 
 ### 问题
 
