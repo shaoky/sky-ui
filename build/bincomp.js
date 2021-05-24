@@ -14,7 +14,6 @@ const START = 0
 const buildChild = (start, end) => {
   let s = start
   let e = end
-  // const c1 = cp.spawn('node', ['./build/build.components.js', s, e])
   const c1 = cp.spawn('node', ['./build/build.component.js', s, e])
   c1.stdout.on('data', function(data) {
     spinner.info(`${chalk.blue(data)}`)
