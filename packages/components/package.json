@@ -1,0 +1,11 @@
+{
+  "name": "@sky/components",
+  "version": "0.0.1",
+  "author": "shaoky",
+  "license": "ISC",
+  "main": "index.ts",
+  "module": "index.ts",
+  "peerDependencies": {
+    "vue": "^3.2.47"
+  }
+}

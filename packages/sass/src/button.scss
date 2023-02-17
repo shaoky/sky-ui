@@ -2,70 +2,65 @@
 
 
 .sky-button {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid #dcdfe6;
-    border-radius: 4px;
-    font-size: 14px;
-    cursor: pointer;
-    background: #fff;
-    &--default {
-      &:hover {
-        background: mix(#fff, $base-color, 90%);
-      }
-    }
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #fff;
+  &--default {
     &:hover {
-      opacity: .8;
-    }
-
-    // 尺寸
-    &--large {
-      padding: 12px 20px;
-      font-size: 14px;
-      border-radius: 4px;
-    }
-    &--small {
-      padding: 9px 15px;
-      font-size: 12px;
-      border-radius: 3px;
-    }
-    &--mini {
-      padding: 7px 15px;
-      font-size: 12px;
-      border-radius: 3px;
-    }
-    // 颜色
-    &--primary {
-      background: #409eff;
-      border-color: #409eff;
-      color: #fff;
-    }
-    &--success {
-      background: #67c23a;
-      border-color: #67c23a;
-      color: #fff;
-    }
-    &--warning {
-      background: #e6a23c;
-      border-color: #e6a23c;
-      color: #fff;
-    }
-    &--danger {
-      background: #f56c6c;
-      border-color: #f56c6c;
-      color: #fff;
-    }
-    // 禁用
-    &.is-disabled {
-      cursor: not-allowed;
-      opacity: 0.5;
-      &.sky-button--default:hover {
-        background: #fff;
-      }
-    }
-    &.is-loading {
-      span {
-        margin-left: 5px;
-      }
+      background: mix(#fff, $base-color, 90%);
     }
   }
+  &:hover {
+    opacity: .8;
+  }
+
+  // 尺寸
+  &--large {
+    padding: 12px 19px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  &--small {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  // 颜色
+  &--primary {
+    background: #409eff;
+    border-color: #409eff;
+    color: #fff;
+  }
+  &--success {
+    background: #67c23a;
+    border-color: #67c23a;
+    color: #fff;
+  }
+  &--warning {
+    background: #e6a23c;
+    border-color: #e6a23c;
+    color: #fff;
+  }
+  &--danger {
+    background: #f56c6c;
+    border-color: #f56c6c;
+    color: #fff;
+  }
+  // 禁用
+  &.is-disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    &.sky-button--default:hover {
+      background: #fff;
+    }
+  }
+  &.is-loading {
+    span {
+      margin-left: 5px;
+    }
+  }
+}

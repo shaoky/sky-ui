@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { series, src, dest } = require('gulp')
-const sass = require('gulp-sass')
+// const fs = require('fs')
+const path = require('path')
+const { series, src, dest, watch } = require('gulp')
+const sass = require('gulp-dart-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
@@ -14,11 +16,22 @@ function compile() {
     .pipe(
       rename(function(path) {
         if (!noElPrefixFile.test(path.basename)) {
-          path.basename = `el-${path.basename}`
+          path.basename = `sky-${path.basename}`
         }
       })
     )
+    // .pipe(dest('./lib'))
     .pipe(dest('./lib'))
 }
-
+// 监听修改
+// watch(['./src/*.scss'], series(compile, function (cb) {
+//   fs.cpSync(
+//     path.resolve(__dirname, './lib'),
+//     path.resolve(__dirname, '../../lib/css'),
+//     {
+//       recursive: true
+//     }
+//   )
+//   cb()
+// }))
 exports.build = series(compile)
